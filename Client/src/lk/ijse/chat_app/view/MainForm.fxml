@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chat_app.controller.MainFormController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img/18954474_6065668.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txt_userName" layoutX="215.0" layoutY="211.0" onAction="#txt_userNameOnAction" prefHeight="25.0" prefWidth="171.0" promptText="Enter Your Name" />
+      <JFXButton fx:id="btn_start" buttonType="RAISED" layoutX="249.0" layoutY="262.0" onAction="#btn_startOnAction" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #c4c7d0;" text="Sign In" textFill="#4977ff">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Book Antiqua Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="74.0" fitWidth="87.0" layoutX="261.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img/icons8-user-64.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
